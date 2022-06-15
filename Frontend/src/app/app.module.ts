@@ -1,27 +1,22 @@
-import { HousingService } from './services/housing.service';
 import { PropertyCardComponent } from './property/propety-card/property-card.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { PropertyListComponent } from './property/property-list/property-list.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     PropertyCardComponent,
     PropertyListComponent,
       NavBarComponent
    ],
   imports: [
-    BrowserModule,
-    HttpClientModule
+    BrowserModule
   ],
-  providers: [
-    HousingService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
